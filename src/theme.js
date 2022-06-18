@@ -13,7 +13,7 @@ const getDesignTokens = (mode) => ({
           main: '#3A444E',
         },
         secondary: {
-          main: '#19857b',
+          main: '#495867',
         },
         error: {
           main: red.A400,
@@ -32,23 +32,23 @@ const getDesignTokens = (mode) => ({
       // dark theme
       {
         primary: {
-          main: "#D0B555"
+          main: "#FFCD8F"
         },
         secondary: {
           main: "#495867"
         },
         background: {
-          default: "#080D12",
+          default: "#000000",
           paper: "#080D12",
         },
         common: {
           white: "#F8F7F8"
         },
         text: {
-          primary: "#D0B555",
+          primary: "#FFCD8F",
         },
         action: {
-          active: "#D0B555"
+          active: "#FFCD8F"
         }
       },
   },

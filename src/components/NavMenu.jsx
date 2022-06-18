@@ -4,7 +4,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import { styled } from "@mui/material/styles";
-import Link from "../Link";
+import Link from "./Link";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from '@mui/icons-material/Menu';
 

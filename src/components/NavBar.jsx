@@ -3,9 +3,7 @@ import AppBar from "@mui/material/AppBar";
 import { Container, Toolbar, Stack, Typography, Grid, Divider, Box } from '@mui/material';
 import { styled } from "@mui/material/styles";
 import DarkLightModeButton from './DarkLightModeButton';
-import Link from "../Link";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from '@mui/icons-material/Menu';
+import Link from "./Link";
 import NavMenu from "./NavMenu";
 
 export default function NavBar() {

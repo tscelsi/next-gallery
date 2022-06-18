@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
-import createEmotionCache from '../src/createEmotionCache';
+import createEmotionCache from '../src/utils/createEmotionCache';
 
 export default class MyDocument extends Document {
   render() {
@@ -9,8 +9,6 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="shortcut icon" href="/alison_favicon.ico" />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,800;1,100;1,300;1,400;1,500&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           {this.props.emotionStyleTags}

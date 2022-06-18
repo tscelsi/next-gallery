@@ -1,0 +1,7 @@
+.canvas {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: calc(100% - 64px);
+    z-index: 1;
+}

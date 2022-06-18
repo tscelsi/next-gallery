@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider } from '@emotion/react';
-import createEmotionCache from '../src/createEmotionCache';
+import createEmotionCache from '../src/utils/createEmotionCache';
 import NavBar from '../src/components/NavBar';
 import MainContainer from '../src/components/MainContainer';
 import Theme from "../src/components/Theme";
