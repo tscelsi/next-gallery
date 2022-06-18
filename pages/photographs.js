@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { getPlaiceholder } from "plaiceholder";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material";
+import Masonry from '@mui/lab/Masonry';
 
 export async function getStaticProps(context) {
     // load images
@@ -33,7 +34,8 @@ export default function Photography({ photos }) {
     const desktop = useMediaQuery(theme.breakpoints.up("lg"));
     return (
         <Container maxWidth="xl">
-            <ImageList variant="masonry" cols={desktop ? 2 : 1} gap={20}>
+            <Masonry columns={desktop ? 2 : 1}>
+                {/* <ImageList variant="masonry" cols={desktop ? 2 : 1} gap={20}> */}
                 {photos.map(((p, idx) => (
                     <Fade in unmountOnExit>
                         <ImageListItem key={idx}>
@@ -42,7 +44,8 @@ export default function Photography({ photos }) {
                         </ImageListItem>
                     </Fade>
                 )))}
-            </ImageList>
+                {/* </ImageList> */}
+            </Masonry>
         </Container>
     )
 }
