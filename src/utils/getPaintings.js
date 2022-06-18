@@ -253,7 +253,7 @@ export default function getPaintings() {
             title: "Lemons in a Sicilian bowl",
             date: "2020",
             forSale: true,
-            sold: false,
+            sold: true,
             price: 300,
             height: 25,
             width: 30,
