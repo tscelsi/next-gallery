@@ -39,7 +39,7 @@ const Home = () => {
                         onCreated={({ gl }) => {
                             gl.shadowMap.enabled = true;
                             gl.shadowMap.type = THREE.PCFSoftShadowMap;
-                            gl.setClearColor('#FAFAFA')
+                            // gl.setClearColor('#FAFAFA')
                             gl.toneMapping = THREE.ACESFilmicToneMapping
                             gl.outputEncoding = THREE.sRGBEncoding
                         }}

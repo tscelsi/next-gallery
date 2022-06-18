@@ -33,7 +33,6 @@ const NightModel = () => {
                 scale={nodes.canvas.scale}
                 material={materials['canvas']}
             />
-            <fog attach="fog" args={["black", 0.2, 10000]} />
             <mesh
                 // visible
                 castShadow
@@ -50,6 +49,6 @@ const NightModel = () => {
     )
 }
 
-useGLTF.preload("/night_art.glb");
+// useGLTF.preload("/night_art.glb");
 
 export default NightModel;
