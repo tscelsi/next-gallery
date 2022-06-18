@@ -4,19 +4,20 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material';
+import Image from "next/image";
 
 const About = () => {
   const theme = useTheme();
   return (
-    <Box sx={{ height: "inherit", backgroundImage: `url("/alison.jpg")`, backgroundSize: "cover" }}>
+    <Box sx={{ height: "inherit" }}>
       <Container
-        maxWidth="xxl"
+        maxWidth="lg"
         sx={{ height: "inherit" }}
       >
-        <Grid container sx={{ height: "inherit", maxWidth: "500px" }} justifyContent="start" alignItems="center">
-          <Grid item xs={12} textAlign={"start"}>
-            <Typography sx={{ marginBottom: "20px" }} variant="h2" color={theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.common.white}>About Alison</Typography>
-            <Typography variant="body1" color={theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.common.white}>
+        <Grid container sx={{ height: "inherit" }} justifyContent="start" alignItems="center" columnSpacing={10}>
+          <Grid item xs={5} textAlign={"start"}>
+            <Typography sx={{ marginBottom: "20px" }} variant="h2" >About Alison</Typography>
+            <Typography variant="body1">
               Alison grew up in Canberra and studied Art Education in Sydney.
               Even though her working life took her in a completely different direction,
               she has always drawn and painted in some way or another. During the pandemic,
@@ -25,9 +26,12 @@ const About = () => {
               This may continue into 2021 but there is a plan for some landscapes too!
             </Typography>
           </Grid>
+          <Grid item xs={7}>
+            <Image quality={100} src="/misty_night_vase.png" width={1920} height={1080} />
+          </Grid>
         </Grid>
       </Container>
-    </Box>
+    </Box >
   );
 };
 
