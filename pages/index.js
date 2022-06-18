@@ -24,7 +24,7 @@ const Home = () => {
                 <Grid container sx={{ height: "inherit" }} columnSpacing={5}>
                     <Grid item xs={12} md={5} >
                         <Stack sx={{ height: "100%" }} textAlign={desktop ? "start" : "center"} justifyContent="center" alignItems="center" direction="column">
-                            <Typography sx={{ position: "relative", paddingLeft: "100px", zIndex: 1000 }} variant="h1" fontWeight={200}>Alison Ray</Typography>
+                            <Typography sx={{ position: "relative", paddingLeft: desktop ? "100px" : "0px", zIndex: 1000 }} variant="h1" fontWeight={200}>Alison Ray</Typography>
                         </Stack>
                     </Grid>
                 </Grid>

@@ -5,18 +5,22 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material';
 import Image from "next/image";
+import useMediaQuery from '@mui/material/useMediaQuery';
+
+const mobileContainerStyles = { display: "flex", direction: "column", alignItems: "center", justifyContent: "center" };
 
 const About = () => {
   const theme = useTheme();
+  const mobile = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <Box sx={{ height: "inherit" }}>
       <Container
         maxWidth="lg"
-        sx={{ height: "inherit" }}
+        sx={mobile ? { height: "inherit" } : { height: "inherit" }}
       >
-        <Grid container sx={{ height: "inherit" }} justifyContent="start" alignItems="center" columnSpacing={10}>
-          <Grid item xs={5} textAlign={"start"}>
-            <Typography sx={{ marginBottom: "20px" }} variant="h2" >About Alison</Typography>
+        <Grid container sx={{ height: mobile ? "none" : "inherit" }} justifyContent="start" alignItems="center" rowSpacing={5} columnSpacing={10}>
+          <Grid item xs={12} md={5} textAlign={"start"}>
+            <Typography sx={{ marginBottom: "20px", marginTop: ["40px", "40px", 0, null, null] }} variant="h2" >About Alison</Typography>
             <Typography variant="body1">
               Alison grew up in Canberra and studied Art Education in Sydney.
               Even though her working life took her in a completely different direction,
@@ -26,7 +30,7 @@ const About = () => {
               This may continue into 2021 but there is a plan for some landscapes too!
             </Typography>
           </Grid>
-          <Grid item xs={7}>
+          <Grid item xs={12} md={7}>
             <Image quality={100} src="/misty_night_vase.png" width={1920} height={1080} />
           </Grid>
         </Grid>
