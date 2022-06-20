@@ -50,6 +50,9 @@ export default function BasicMenu() {
                 <MenuItem onClick={handleClose}>
                     <StyledLink underline="none" href="/about"><Typography variant="subtitle1">About</Typography></StyledLink>
                 </MenuItem>
+                <MenuItem onClick={handleClose}>
+                    <StyledLink underline="none" href="/contact"><Typography variant="subtitle1">Contact</Typography></StyledLink>
+                </MenuItem>
             </Menu>
         </div>
     );
