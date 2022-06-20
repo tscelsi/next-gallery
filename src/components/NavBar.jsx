@@ -23,7 +23,6 @@ export default function NavBar() {
                                 <StyledLink underline="none" href="/paintings"><Typography variant="subtitle1">Paintings</Typography></StyledLink>
                                 <StyledLink underline="none" href="/photographs"><Typography variant="subtitle1">Photos</Typography></StyledLink>
                                 <StyledLink underline="none" href="/about"><Typography variant="subtitle1">About</Typography></StyledLink>
-                                <StyledLink underline="none" href="/contact"><Typography variant="subtitle1">Contact</Typography></StyledLink>
                             </Stack>
                         </Grid>
                     </Container>
