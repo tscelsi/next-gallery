@@ -15,6 +15,7 @@ const NightModel = () => {
         group.current.rotation.x = -0.4 * state.mouse.y;
         lightTarget.current.position.x = 0.1 * Math.sin(state.clock.getElapsedTime())
     });
+    console.log(nodes);
     return (
         <group ref={group} dispose={null}>
             <mesh
