@@ -5,9 +5,8 @@ import {
 } from "@react-three/fiber";
 import * as THREE from 'three'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { useTheme, Box, Grid, Typography, Stack } from '@mui/material';
+import { useTheme, Box, Grid, Typography, Stack, Fade } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { styled } from "@mui/material/styles";
 import canvasStyles from "./index.module.css";
 import Loader from "../src/components/Three/Loader";
 import NightModel from "../src/components/Three/NightModel";
@@ -19,7 +18,7 @@ const Home = () => {
     const theme = useTheme();
     const desktop = useMediaQuery(theme.breakpoints.up("md"));
     return (
-        <>
+        <Fade unmountOnExit in>
             <Box sx={{ zIndex: 10, position: "relative", height: "inherit" }}>
                 <Grid container sx={{ height: "inherit" }} columnSpacing={5}>
                     <Grid item xs={12} md={5} >
@@ -54,8 +53,7 @@ const Home = () => {
 
                     </Canvas>}
             </Box>
-
-        </>
+        </Fade>
     )
 }
 
