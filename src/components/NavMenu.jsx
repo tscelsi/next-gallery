@@ -42,13 +42,13 @@ export default function BasicMenu() {
                     <StyledLink underline="none" href="/"><Typography variant="subtitle1">Home</Typography></StyledLink>
                 </MenuItem>
                 <MenuItem onClick={handleClose}>
+                    <StyledLink underline="none" href="/about"><Typography variant="subtitle1">About</Typography></StyledLink>
+                </MenuItem>
+                <MenuItem onClick={handleClose}>
                     <StyledLink underline="none" href="/paintings"><Typography variant="subtitle1">Paintings</Typography></StyledLink>
                 </MenuItem>
                 <MenuItem onClick={handleClose}>
                     <StyledLink underline="none" href="/photographs"><Typography variant="subtitle1">Photos</Typography></StyledLink>
-                </MenuItem>
-                <MenuItem onClick={handleClose}>
-                    <StyledLink underline="none" href="/about"><Typography variant="subtitle1">About</Typography></StyledLink>
                 </MenuItem>
             </Menu>
         </div>

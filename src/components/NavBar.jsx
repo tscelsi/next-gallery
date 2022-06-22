@@ -20,9 +20,9 @@ export default function NavBar() {
                                 divider={<Divider orientation="vertical" flexItem />}
                             >
                                 <StyledLink underline="none" href="/"><Typography variant="subtitle1">Home</Typography></StyledLink>
+                                <StyledLink underline="none" href="/about"><Typography variant="subtitle1">About</Typography></StyledLink>
                                 <StyledLink underline="none" href="/paintings"><Typography variant="subtitle1">Paintings</Typography></StyledLink>
                                 <StyledLink underline="none" href="/photographs"><Typography variant="subtitle1">Photos</Typography></StyledLink>
-                                <StyledLink underline="none" href="/about"><Typography variant="subtitle1">About</Typography></StyledLink>
                             </Stack>
                         </Grid>
                     </Container>
