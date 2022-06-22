@@ -10,11 +10,24 @@ import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { useTheme } from '@mui/material';
 import Image from "next/image";
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { getPlaiceholder } from "plaiceholder";
 
 const mobileContainerStyles = { display: "flex", direction: "column", alignItems: "center", justifyContent: "center" };
 const EMAIL = "aray@internode.on.net"
 
-const About = () => {
+export async function getStaticProps(context) {
+  const { base64, img } = await getPlaiceholder("/misty_night_vase.png")
+  return {
+    props: {
+      imageProps: {
+        ...img,
+        blurDataURL: base64
+      }
+    }
+  }
+}
+
+const About = ({ imageProps }) => {
   const theme = useTheme();
   const mobile = useMediaQuery(theme.breakpoints.down("md"));
   const copy = () => {
@@ -49,7 +62,7 @@ const About = () => {
             </Stack>
           </Grid>
           <Grid item xs={12} md={7}>
-            <Image quality={100} src="/misty_night_vase.png" width={1920} height={1080} />
+            <Image quality={100} width={1920} height={1080} placeholder="blur" {...imageProps} />
           </Grid>
         </Grid>
       </Container>

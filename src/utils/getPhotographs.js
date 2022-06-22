@@ -215,14 +215,14 @@ export default function getPaintings() {
             src: "/_photographs/what.png",
             imgWidth: 1600,
             imgHeight: 1200,
-            title: "Striated Pardalote",
+            title: "Striated Pardalotes",
         },
         {
             key: "what2",
             src: "/_photographs/what2.png",
             imgWidth: 1600,
             imgHeight: 1200,
-            title: "Striated Pardalote",
+            title: "Striated Pardalotes",
         },
         {
             key: "zorro",
