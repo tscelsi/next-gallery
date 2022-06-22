@@ -40,7 +40,7 @@ export default function Photography({ photos }) {
                     <Fade in unmountOnExit>
                         <ImageListItem key={idx}>
                             <Image quality={100} width={p.imgWidth} height={p.imgHeight} {...p.imageProps} placeholder="blur" />
-                            <ImageListItemBar position="below" title={p.title} subtitle={`${p.date} - ${p.camera}`} />
+                            <ImageListItemBar position="below" title={p.title} />
                         </ImageListItem>
                     </Fade>
                 )))}
