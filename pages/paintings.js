@@ -44,7 +44,7 @@ export default function Painting({ paintings }) {
                             <ImageListItemBar position="below" title={`${p.title} ${p.date} - ${p.forSale ? (p.sold ? "sold" : "$" + p.price) : "not for sale"}`} subtitle={
                                 <Stack>
                                     <Typography variant="caption">{`${p.paint} on ${p.material}`}</Typography>
-                                    <Typography variant="caption">{`${p.height}cm x ${p.width}cm`}</Typography>
+                                    <Typography variant="caption">{`${p.width}cm x ${p.height}cm`}</Typography>
                                 </Stack>
                             } />
                         </ImageListItem>
