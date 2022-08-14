@@ -208,7 +208,7 @@ export default function getPaintings() {
             src: "/_photographs/watchu_looking_at.png",
             imgWidth: 1600,
             imgHeight: 1200,
-            title: "Wood Duck",
+            title: "Pacific Black Duck",
         },
         {
             key: "what",
