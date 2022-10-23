@@ -27,6 +27,20 @@ import zinnias from "../../public/_paintings/zinnias.jpg"
 export default function getPaintings() {
     return [
         {
+            key: "lilies",
+            src: "/_paintings/lillies.jpg",
+            imgWidth: 1248,
+            imgHeight: 1600,
+            title: "Lilies",
+            date: "2022",
+            forSale: true,
+            price: 400,
+            height: 46,
+            width: 35.5,
+            paint: "acrylic",
+            material: "canvas",
+        },
+        {
             key: "blue_vase_of_flowers",
             src: "/_paintings/blue_vase_of_flowers.jpg",
             imgWidth: 1213,
@@ -41,7 +55,7 @@ export default function getPaintings() {
         },
         {
             key: "full_blooms_on_the_blue_tablecloth",
-            src: "/_paintings/full_blooms_on_the_blue_tablecloth.jpg",
+            src: "/_paintings/full_blooms_on_the_blue_tablecloth2.jpg",
             imgWidth: 1194,
             imgHeight: 1600,
             title: "Full blooms on the blue tablecloth",

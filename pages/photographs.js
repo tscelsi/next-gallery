@@ -34,7 +34,7 @@ export default function Photography({ photos }) {
     const desktop = useMediaQuery(theme.breakpoints.up("lg"));
     return (
         <Container maxWidth="xl">
-            <Masonry columns={desktop ? 2 : 1}>
+            <Masonry columns={desktop ? 3 : 1}>
                 {/* <ImageList variant="masonry" cols={desktop ? 2 : 1} gap={20}> */}
                 {photos.map(((p, idx) => (
                     <Fade key={idx} in unmountOnExit>
